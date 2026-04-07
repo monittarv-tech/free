@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+</head>
+<body>
+    <h2>All Projects</h2>
+
+    {% for p in projects %}
+        <div style="border:1px solid black; margin:10px; padding:10px;">
+            <h3>{{ p[1] }}</h3>
+            <p>{{ p[2] }}</p>
+            <b>Budget: ₹{{ p[3] }}</b>
+        </div>
+    {% endfor %}
+
+    <a href="/">Back</a>
+</body>
+</html>
